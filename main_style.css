@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #fffade;
+    color: #124713;
+    text-align: center;
+    font-family: 'Quicksand';
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: 'Oleo Script';
+    font-size: 80px;
+    margin-top: 3vh;
+}
+
+h2{
+    padding-top: 3vh;
+    font-family: 'Oleo Script';
+    font-size: 50px;
+}
+
+p{
+    font-size: 16px;
+}
+
+article{
+    padding: 0 10vw 3vh 10vw;
+}
+
+a{
+    background-color: #72933a;
+    color: #dbeec2;
+    border: 4px solid #124713;
+    font-family: "Oleo Script";
+    font-size: 30px;
+    display: inline-block;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #dbeec2;
+    color:#1c661e;
+}
+
+button{
+    background-color: #72933a;
+    color: #dbeec2;
+    border: 4px solid #124713;
+    font-family: "Oleo Script";
+    font-size: 30px;
+    display: inline-block;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #dbeec2;
+    color:#1c661e;
+}
+
+img{
+    object-fit: cover;
+    width: 80vw;
+    padding-bottom: 5vh;
+}
+
+header{
+    background-color: #124713;
+    background-image: none;
+    font-family: "Oleo Script";
+    color: #dbeec2;
+    text-align: left;
+}
+
+header a{
+    padding: 15px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #dbeec2;
+    text-decoration: none;
+    font-family: "Oleo Script";
+    font-size: 30px;
+    display: inline-block;
+}
+
+header a:hover{
+    padding: 15px;
+    margin: 0px;
+    background-color: #dbeec2;
+    color:#124713;
+}
+
+.header-logo{
+    font-size: 36px;
+}
+
+.current-page{
+    color: white;
+}
+
+footer{
+    background-image: linear-gradient(#1c661e,#124713);
+    height: 400px;
+}
+
+#footer-banner{
+    background-color: #72933a;
+    color: #dbeec2;
+    padding: 15px;
+}
+
+#footer-banner p{
+    font-size: 20px;
+}
+
+#footer-banner a{
+    font-size: 20px;
+    border: none;
+    font-family: "Quicksand";
+    text-decoration: underline;
+    margin: none;
+    padding: none;
+    display: inline;
+}
+
+#footer-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+
+#footer-links a{
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-family: "Quicksand";
+    font-size: 15px;
+    display: block;
+    margin-top: 2vh;
+}
+
+#back-to-top{
+    padding: 2%;
+    margin-right: 5vw;
+    background-color: #72933a; 
+    color: #dbeec2;
+    border: 4px solid #124713;
+    float: right;
+}
+
+/*INDEX*/
+
+#welcome{
+    background-image: url("images/school_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#home-title{
+    display: block;
+    color:#dbeec2;
+    background-color: rgba(7,37,8,0.78);
+}
+
+#intro-paragraph{
+    background-color: #dbeec2;
+    color:#124713;
+    padding: 50px 10% 50px 10%;
+}
+
+#intro-img{
+    width: 100%;
+    height: 50vh;
+}
+
+#recent-articles{
+    padding: 10%;
+    margin-top: -10vh;
+}
+
+#ra-title{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#ra-heading{
+    text-align: left;
+    margin-left: 5%;
+    display: inline;
+    float: left;
+}
+
+#see-more{
+    text-align: right;
+    margin-right: 5%;
+    display: inline;
+}
+
+#upcoming-term-dates{
+    margin-bottom: 10vh;
+    padding-bottom: 5vh;
+    border: 4px solid #124713;
+    background-color: #dbeec2;
+    height: 50vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.term-dates-name{
+    float: left;
+    padding: 5%;
+    margin-left: 15%;
+}
+
+.term-dates-date{
+    float: right;
+    padding: 5%;
+    margin-right: 15%;
+}
+
+#about-image{
+    width: 50%;
+}
+
+/*Article display box - shared with all articles list*/
+
+#article-display-list{
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 10%;
+    width: 100%;
+}
+
+#article-display-list a{
+    font-family: "Quicksand";
+}
+
+.article-display{
+    border: 4px solid #124713;
+    background-color:#72933a;
+    color:#dbeec2;
+    width: 80vw;
+    text-align: justify;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.article-display img{
+    width: 90%;
+    padding: 3%;
+}
+
+.article-display-title{
+    font-family: "Oleo Script";
+    font-size: 26px;
+    text-align: center;
+}
+
+/*CONTACT*/
+
+#contact-section{
+    display: flex;
+    margin: 5vh;
+    background-color: none;
+}
+
+#contact-info{
+    width: 75vw;
+    margin: 1vw;
+}
+
+#email-contact{
+    border: none;
+    font-family: "Quicksand";
+    text-decoration: underline;
+    text-align: center;
+    background-color: #72933a;
+    color:#dbeec2;
+    padding: 5vh;
+    margin-top: 10vh;
+}
+
+#email-contact:hover{
+    background-color: #dbeec2;
+    color:#72933a;
+}
+
+#email-contact p{
+    font-size: 25px;
+}
+
+/*ARTICLES LIST*/
+
+#all-articles-list{
+    padding-top: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 3%;
+    width: 100%;
+}
+
+#all-articles-list a{
+    font-family: "Quicksand";
+    width: 30vw;
+}
+
+/*ARTICLES*/
+
+#options-bar{
+    background-color: #72933a;
+    border-top: 4px solid #124713;
+    margin: 5vw;
+    display: flex;
+    justify-content: center;
+}
+
+#options-bar p{
+    color: #dbeec2;
+    margin-top: 2vh;
+}
+
+#number-input{
+    margin: 1vh;
+}
+
+#back-button, #options-bar button{
+    font-family: "Quicksand";
+    font-size: 16px;
+    border: 3px solid #124713;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+#article-info h1{
+    margin: 0;
+}
+
+#article-info p{
+    margin-top: -2vh;
+}
+
+article{
+    margin: 3vh;
+}
+
+article img, article p{
+    width: 50%;
+    margin: auto;
+    margin-top: 4vh;
+}
+
+#journaling-ad{
+    font-family: "Quicksand";
+    background-color: #124713;
+    border: 4px solid #72933a;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 1000px){
+    #article-display-list, #ra-title, #all-articles-list, #contact-section{
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+    }
+    #all-articles-list a{
+        width: 70vw;
+        margin: 12vw;
+    }
+    #see-more{
+        text-align: left;
+        margin-left: 5%;
+        padding-top: 5vh;
+    }
+    #back-to-top{
+        float: none;
+        width: 100vw;
+        margin-top: 10vh;
+    }
+    #options-bar{
+        flex-direction: column;
+        padding: 2vh;
+        border-top: 2vh solid #124713;
+    }
+    #options-bar a, #options-bar button{
+        width: 50vw;
+        margin-left: 16vw;
+    }
+    article img, article p, #about-image{
+        width: 100%;
+        margin: auto;
+        margin-top: 1vh;
+    }
+}
